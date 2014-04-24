@@ -17,14 +17,20 @@ public class Fibbonanci {
         int a=0;
         int b=1;
         int c=0;
-        //System.out.print(n+" deret Fibonacci: " );
+        //System.out.print(n+" deret Fibonacci reverse: " );
         for (int i=1;i<=n;i++){
             //System.out.print(a+" ");
             a=a+b;
             b=a-b;
-            c=c+a;
+            //c=c+a;
         }
-        System.out.print("jumlah Fibonacci: "+c);
+        for (int i=1;i<=n;i++){
+            System.out.print(a+" ");
+            a=a-b;
+            b=a+b;
+            //c=c+a;
+        }
+        //System.out.print("jumlah Fibonacci: "+c);
     }
         
 }
